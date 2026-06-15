@@ -12,7 +12,7 @@ def main():
     count_beepers = 0
 
     # var beepers on the floor
-    floor_beepers = 1
+    floor_beepers = 6
 
     # Loop
     while True:
@@ -22,7 +22,7 @@ def main():
             floor_beepers -= 1
             print(f'Need {floor_beepers} more beeper!')
 
-        if count_beepers == 1:
+        if count_beepers == 6:
             break
         print()
 
@@ -58,56 +58,56 @@ def forward():
     if facing_north() and front_is_clear():
         move()
     elif facing_north() and front_is_blocked():
-        print("Can't go there w")
+        print("Can't go there")
     else:
         while not_facing_north():
             turn_left()
         if front_is_clear():
             move()
         else:
-            print("Can't go there wd")
+            print("Can't go there")
 
 def left():
     '''move to the left'''
     if facing_west() and front_is_clear():
         move()
     elif facing_west() and front_is_blocked():
-        print("Can't go there l")
+        print("Can't go there")
     else:
         while not_facing_west():
             turn_left()
         if front_is_clear():
             move()
         else:
-            print("Can't go there ld")
+            print("Can't go there")
 
 def right():
     '''move to the right'''
     if facing_east() and front_is_clear():
         move()
     elif facing_east() and front_is_blocked():
-        print("Can't go there r")
+        print("Can't go there")
     else:
         while not_facing_east():
             turn_left()
         if front_is_clear():
             move()
         else:
-            print("Can't go there rd")
+            print("Can't go there")
 
 def down():
     '''move to the right'''
     if facing_south() and front_is_clear():
         move()
     elif facing_south() and front_is_blocked():
-        print("Can't go there b")
+        print("Can't go there")
     else:
         while not_facing_south():
             turn_left()
         if front_is_clear():
             move()
         else:
-            print("Can't go there bd")
+            print("Can't go there")
 
 
 
