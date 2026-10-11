@@ -96,7 +96,7 @@ def right():
             print("Can't go there")
 
 def down():
-    '''move to the right'''
+    '''down'''
     if facing_south() and front_is_clear():
         move()
     elif facing_south() and front_is_blocked():
